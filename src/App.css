@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+
+body {
+  background-color: lavender;
+  background-size: contain;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fondo {
+  width: 100%;
+  height: 850px;
+  background-image: url("./img/semaforo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(80%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top {
+  width: ;
+}
+.semaforo {
+  position: absolute;
+  top: 218px;
+  left: 753px;
+  width: 170px;
+  height: 415px;
+  background-color: yellow;
+  border-radius: 5%;
+  background: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.redlight {
+  
+  position: absolute;
+  width: 100px ;
+  height: 100px;
+  background-color: red;
+  border-radius: 100%;
+  top: 250px;
+  left: 785px;
+ /*  background: transparent; */
+ 
+  
+}
+.orangelight {
+  position: absolute;
+  width: 100px ;
+  height: 100px;
+  background-color: orange;
+  border-radius: 100%;
+  top: 375px;
+  left: 785px;
+  
+}
+.greenlight {
+  position: absolute;
+  width: 100px ;
+  height: 100px;
+  background-color: green;
+  border-radius: 100%;
+  top: 497px;
+  left: 785px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.glow {
+  box-shadow: 0 0 50px 30px #f8ffcc;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
